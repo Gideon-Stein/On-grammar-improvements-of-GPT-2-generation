@@ -1,6 +1,9 @@
 # On-grammar-improvements-of-GPT-2-generation
 
-This repository includes the complete code for the paper XXXX. The purpose of this repository is to make the conducted experiments reproducable and give additional insights.
+This repository includes the complete code for the paper XXXX. The purpose of this repository is to make the
+ conducted experiments reproducable and give additional insights.
+
+
 <img src="placeholder.png" alt="drawing" width="200"/>
 
 ## Getting Started
@@ -27,6 +30,14 @@ To install dependencies simply run
 ```
 pip install -r requirements.txt
 ```
+
+To rebuild the missing empty folders for external resources and saves simply run
+
+```
+python create_empty_folders.py
+```
+
+
 You should be good to go. 
 
 
