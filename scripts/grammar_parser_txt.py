@@ -52,7 +52,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--path", default="test.txt", type=str)
     parser.add_argument("--save_replace", default=False, type=bool)
-    parser.add_argument("--splitnr", default="None", type=str)
+    parser.add_argument("--name", default="None", type=str)
     args = parser.parse_args()
     
     corpus = load(args.path)
@@ -64,8 +64,8 @@ def main():
     	autocorrect[x] = autocorrect[x] +"<|endoftext|>" 
 
 
-    pickle.dump(autocorrect,open("EOS_corrected_v2_"  args.nr + ".p","wb"))
-    pickle.dump(stats,open("EOS_stats_v2_" + args.nr + ".p","wb"))
+    pickle.dump(autocorrect,open("EOS_corrected_v2_"  args.name + ".p","wb"))
+    pickle.dump(stats,open("EOS_stats_v2_" + args.name + ".p","wb"))
    
 
 

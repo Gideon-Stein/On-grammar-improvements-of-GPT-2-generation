@@ -1,24 +1,24 @@
 # On-grammar-improvements-of-GPT-2-generation
 
-This repository includes the complete code for the paper XXXX. The purpose of this repository is to make experiments reproducable and give advanced insights into the experiments that were conducted. 	
-
-<img src="architecture.png" alt="drawing" width="200"/>
+This repository includes the complete code for the paper XXXX. The purpose of this repository is to make the conducted experiments reproducable and give additional insights.
+<img src="placeholder.png" alt="drawing" width="200"/>
 
 ## Getting Started
 
 This repository includes the following things: 
 
   - Documentation of the Dataset building process
-  - Finetuning, Grammar Correction and Generation scripts that were used during this research project
+  - Finetuning, Grammar Correction, and Generation scripts that were used during this research project
   - Documentation of the complete evaluation process
-  - A mountain of generated samples that was used during evaluation
+  - A mountain of generated samples that was used for evaluation
   - Documentation of the model combination evaluation
-  - Documentation of generating samples referenced in our paper
+  - Documentation of example generation for our paper.
 
 
 ## Build on
 
 * [HuggingFace -Transformers](https://github.com/huggingface/transformers)
+* [language-check](https://pypi.org/project/language-check/)
 
 ### Installation
 
@@ -39,20 +39,27 @@ You should be good to go.
 - The model checkpoints are needed to retrace everything. If needed they are available by contacting Gideon-Stein. 
 
 
-## Generation script usage:
+## Finetuning scripts usage:
  ```
- python transgenerator_translation.py --model_path=../trained_models/the_dream_final_3/checkpoint-257616/pytorch_model.bin --text_path ../build_data/EOS_new_filter_700.txt --n_data 1000 --save_path the_dream_filter_700_3_1.p
- python run_generation_edited.py  --model_name_or_path=model_save/only_correctedAll/pytorch_model.bin --save_name oootf 
+ python run_lm_finetuning_frozen_3.py --output_dir=model_save/test --model_type=gpt2 --model_name_or_path=gpt2 --do_train --train_data_file=train.txt 
+ python run_generation_edited.py  --output_dir=model_save/test --model_type=gpt2 --model_name_or_path=gpt2 --do_train --train_data_file=data_files/train.txt
+
+ ```
+
+## Generation scripts usage:
+ ```
+ python transgenerator_translation.py --model_path=../trained_models/test/pytorch_model.bin --text_path ../build_data/test.txt --n_data 1000 --save_path test.p
+ python run_generation_edited.py  --model_name_or_path=model_save/test/pytorch_model.bin --save_name test 
 ```
   Parameters can be added and changed accordingly to the script.
 
-## Finetuning script usage:
- ```
- python run_lm_finetuning_frozen_3.py --output_dir=model_save/the_dream_finetune_3 --model_type=gpt2 --model_name_or_path=gpt2 --do_train --train_data_file=classic_finetune_train.txt  --per_gpu_train_batch_size 1  --gradient_accumulation_steps 4 --save_steps 41599 --save_total_limit 20  --num_train_epochs 20 
- python run_generation_edited.py  --model_name_or_path=model_save/the_dream_classic_finetune_2/first/checkpoint-41599/pytorch_model.bin --save_name generate_cf_1  --max_length 1024 --n_sentences 100
- ```
 
+## Grammar correction scripts usage:
+ ```
+python grammar_parser_json.py --path data/small-117M.train.jsonl --save_replace True --name test
+python grammar_parser_txt.py --path base.txt --save_replace True --name test
 
+ ```
  
 
  ## Authors
