@@ -1,0 +1,49 @@
+Mistake type: ENGLISH_WORD_REPEAT_RULE
+Original:Videos show squads of senior SWAT team members often breaking at any moment to chase chase down the active shooter.
+
+Translation: Videos show squads of senior SWAT team members often breaking at any moment to chase down the active shooter.<|endoftext|>
+128
+
+Mistake type: UPPERCASE_SENTENCE_START
+Original:is this what Revival has talked about first?
+
+Translation: Is this what Revival has talked about first?<|endoftext|>
+
+Original:citizen, has welcomed trial for Benghazi burn inmate Dacwan Heqyar, the aging executioner, worried the government-set model of direct punishment for terrorists could dissuade most of his followers from further involvement and make him reluctant to use force against others.
+Translation: Citizen, has welcomed trial for Benghazi burn inmate Nathan Hekmatyar, the aging executioner, worried the government-set model of direct punishment for terrorists could dissuade most of his followers from further involvement and make him reluctant to use force against others.<|endoftext|>
+
+Mistake type: EN_A_VS_AN
+Original:
+
+Gabhal, an strong contender.
+Translation: 
+
+Gabriel, a strong contender.<|endoftext|>
+339
+
+Original:Could it be that he was moving forward with a boycott of the clerical structures that are acting as the main instrument in an economic hashing out timeframe or 2022 seeing for Sringla temporary signedand a envoy within the next few days (all while calming down the imperialist Moynihanlander who is planning to draw the IBWI Chief Su, the Mother Church.) If Lee Sukhaile was issuing Sools Janata listsheis [2st Class Orders of the U.N., or Sinn Liturgy Tagn., which is the Tidanga Priesthood mentioned by ACLU.
+Translation: Could it be that he was moving forward with a boycott of the clerical structures that are acting as the main instrument in an economic hashing out time frame or 2022 seeing for Single temporary signed and an envoy within the next few days (all while calming down the imperialist Moynihanlander who is planning to draw the IBWI Chief So, the Mother Church.) If Lee Sukhaile was issuing Tools Jana ta list shears [2st Class Orders of the U.N., or Sign Liturgy Tag., which is the Tidal Priesthood mentioned by ACLU.<|endoftext|>
+214
+
+Mistake type: SENT_START_CONJUNCTIVE_LINKING_ADVERB_COMMA /ALL upgraded
+Original:Thus more growth is experienced in human females with a delivery 7–15 days later as compared to male sheep's acceptance and this is thought to be only seen in sheep four weeks post KDR since then.
+Translation: Thus, more growth is experienced in human females with a delivery 7–15 days later than compared to male sheep's acceptance and this is thought to be only seen in sheep four weeks post KDR since then.<|endoftext|>
+296
+Original:Also because females are more likely to care for other members of their group, sterile (Percent Prem Length Head bearing) male sheep are at higher risk for poor health and impairment, and also likely to have better amenities [ 19 ].
+
+Translation: Also, because females are more likely to care for other members of their group, sterile (Percent Poem Length Head bearing) male sheep are at higher risk for poor health and impairment, and also likely to have better amenities [19].<|endoftext|>
+
+Mistake type: CD_NN
+Original:We recommend 10 ring for long-term comfort and SAFE fit.
+Translation: We recommend 10 rings for long-term comfort and SAFE fit.<|endoftext|>
+
+BAD EXAMPLES: 
+
+Mistake type: MUCH_COUNTABLE /ALL upgraded
+Original:How much does it cost for $20 or $35 for one year?
+Translation: ' How many does it cost for $20 or $35 for one year?<|endoftext|>'
+
+Mistake type: SAY_TELL /ALL upgraded
+Original:McGill, who says her family did not have a law enforcement incident report as of 5 p.m., is dubious Francis publicly expressed remorse.
+
+' McGill, who tells her family did not have a law enforcement incident report as of 5 p.m., is dubious Francis publicly expressed remorse.<|endoftext|>'
