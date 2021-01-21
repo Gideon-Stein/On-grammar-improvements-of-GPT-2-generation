@@ -4,7 +4,7 @@ This repository includes the complete code for the paper "On improving GPTs lang
  conducted experiments reproducable, give additional insights and inspire future research.
 
 
-<img src="header.png" alt="drawing" width="200"/>
+<img src="header.png" alt="drawing" width="400"/>
 
 ## Getting Started
 
