@@ -1,10 +1,10 @@
 # On-grammar-improvements-of-GPT-2-generation
 
-This repository includes the complete code for the paper XXXX. The purpose of this repository is to make the
- conducted experiments reproducable and give additional insights.
+This repository includes the complete code for the paper "On improving GPTs language generation through grammar error rate reduction". The purpose of this repository is to make the
+ conducted experiments reproducable, give additional insights and inspire future research.
 
 
-<img src="placeholder.png" alt="drawing" width="200"/>
+<img src="header.png" alt="drawing" width="200"/>
 
 ## Getting Started
 

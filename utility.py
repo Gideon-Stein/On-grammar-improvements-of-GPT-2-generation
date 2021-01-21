@@ -488,12 +488,12 @@ def levenshtein(seq1, seq2):
                 )
     return (matrix[size_x - 1, size_y - 1])
 
-def load_and_split_finetune():
-    onlyfiles = [f for f in listdir("generated/classic") if isfile(join("generated/classic", f))]
+def load_and_split_finetune(folder = "generated/classic/"):
+    onlyfiles = [f for f in listdir(folder) if isfile(join(folder, f))]
     out = [None]* len(onlyfiles)
     for file in onlyfiles:
         where = int(file.split("_")[-1][:-4])
-        texts = open("generated/classic/" + file,"r+",encoding="utf-8")
+        texts = open(folder + file,"r+",encoding="utf-8")
         texts = texts.read()
         texts = texts.split("<|endoftext|>")
         prep = []
@@ -569,13 +569,14 @@ def load_examples(folder):
         out[where-1] = pickle.load(open(folder + "/" + x, "rb"))
     return out
 
-def load_finetune():
+def load_finetune(where = "saves/classic_finetuning"):
     out = []
-    stats = pickle.load(open("saves/classic_finetuning_translation_stats.p","rb"))
-    cor = pickle.load(open("saves/classic_finetuning_translation.p","rb"))
+    stats = pickle.load(open(where + "_translation_stats.p","rb"))
+    cor = pickle.load(open(where + "_translation.p","rb"))
     for x in range (len(stats)):
         out.append(grammar_stats(stats[x],len(stats[x][-3]) + stats[x][0]))
     return out
+
 
 def load_gpt_data():
     texts = []

@@ -27,7 +27,7 @@ import torch.nn.functional as F
 import numpy as np
 
 import os
-os.environ['CUDA_VISIBLE_DEVICES']= "1"
+os.environ['CUDA_VISIBLE_DEVICES']= "0"
 
 from transformers import GPT2Config, OpenAIGPTConfig, XLNetConfig, TransfoXLConfig, XLMConfig, CTRLConfig
 
@@ -139,7 +139,7 @@ def main():
 
     tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
     model = GPT2LMHeadModel.from_pretrained('gpt2')
-    #model.load_state_dict(torch.load(args.model_name_or_path))
+    model.load_state_dict(torch.load(args.model_name_or_path))
     model.to(args.device)
     model.eval()
 
